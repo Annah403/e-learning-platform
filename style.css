@@ -1,0 +1,114 @@
+/* --- General Page Styles --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+/* --- Layout Containers --- */
+#app {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Course List --- */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.course-card button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.course-card button:hover {
+  background-color: #3b82f6;
+}
+
+/* --- Course Details --- */
+.course-detail {
+  padding: 1rem;
+}
+
+.lesson {
+  background-color: #f9fafb;
+  padding: 0.75rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* --- Buttons --- */
+.back-btn, .complete-btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover, .complete-btn:hover {
+  background-color: #3b82f6;
+}
+
+/* --- Progress Bar --- */
+.progress-container {
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  height: 15px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #1e3a8a;
+  height: 15px;
+  width: 0;
+  transition: width 0.3s ease;
+}
